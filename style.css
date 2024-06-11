@@ -34,7 +34,7 @@ BODY {
 }
 
 :focus {
-    outline: 2px solid red;
+    outline: 2px solid var(--bgColor);
     outline-offset: 0.1rem;
 }
 
@@ -76,6 +76,15 @@ BUTTON:hover {
 SVG {
     height: 100%;
     width: auto;
+}
+
+A {
+    text-decoration: none;
+    color: var(--DarkCyan);
+}
+
+A:focus {
+    outline-color: var(--DarkCyan);
 }
 
 .icon_container {
@@ -131,6 +140,12 @@ ARTICLE:nth-of-type(3n) BUTTON {
     color: var(--VeryDarkCyan);
 
 }
+
+.attribution P {
+    color: var(--VeryDarkCyan);
+    margin-top: 1rem;
+}
+
 
 @media screen and (min-width:800px) {
     .cards_container {
