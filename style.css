@@ -90,6 +90,7 @@ A:focus {
 .icon_container {
     width: 64px;
     height: 40px;
+    transition: all 250ms ease-in-out;
 }
 
 .cards_container {
@@ -109,6 +110,11 @@ ARTICLE {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
+
+}
+
+ARTICLE:hover .icon_container {
+    transform: scale(1.2);
 }
 
 ARTICLE:nth-of-type(1n) {
